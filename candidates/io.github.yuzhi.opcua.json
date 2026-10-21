@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "io.github.yuzhi.opcua",
+  "publisher": "yuzhi",
+  "version": "0.1.0",
+  "name": "OPC UA",
+  "description": "Browse the OPC UA address space of PLCs and servers, then read and write node values.",
+  "icon": "https://raw.githubusercontent.com/bobocha214/dbx-plugin-opcua/v0.1.0/assets/plugin.svg",
+  "tags": [
+    "opcua",
+    "industrial",
+    "plc",
+    "iiot",
+    "automation"
+  ],
+  "permissions": [
+    "host.connections:read",
+    "host.workbench"
+  ],
+  "source": "https://github.com/bobocha214/dbx-plugin-opcua/tree/v0.1.0",
+  "homepage": "https://github.com/bobocha214/dbx-plugin-opcua",
+  "license": "Apache-2.0",
+  "releaseNotes": "Initial release: connect to an OPC UA server, browse the address space, read node values, and write scalar values.",
+  "localizations": {
+    "zh-CN": {
+      "name": "OPC UA",
+      "description": "连接 OPC UA 服务器 / PLC，浏览地址空间，读取与写入节点值，并可将点位加入监视列表持续观察与就地改写下发。"
+    }
+  },
+  "targets": [
+    {
+      "target": "darwin-arm64",
+      "url": "https://github.com/bobocha214/dbx-plugin-opcua/releases/download/v0.1.0/io.github.yuzhi.opcua-0.1.0-darwin-arm64.dbxp",
+      "sha256": "eb84f66733e00f0ca7aaadd164175cae6fc848dcd86304232eaff1acee3eb109",
+      "size": 2375505
+    },
+    {
+      "target": "darwin-x64",
+      "url": "https://github.com/bobocha214/dbx-plugin-opcua/releases/download/v0.1.0/io.github.yuzhi.opcua-0.1.0-darwin-x64.dbxp",
+      "sha256": "5341d2a73078d7e40e362bcbbef75874021607fcf1ad7e16cb50fb140d2b1cbe",
+      "size": 2500679
+    },
+    {
+      "target": "linux-arm64",
+      "url": "https://github.com/bobocha214/dbx-plugin-opcua/releases/download/v0.1.0/io.github.yuzhi.opcua-0.1.0-linux-arm64.dbxp",
+      "sha256": "95abeed21b8bd6123f83f3fe5e31b0d5ae70292736d801ba1f549d0c0b904396",
+      "size": 2511196
+    },
+    {
+      "target": "linux-x64",
+      "url": "https://github.com/bobocha214/dbx-plugin-opcua/releases/download/v0.1.0/io.github.yuzhi.opcua-0.1.0-linux-x64.dbxp",
+      "sha256": "3ad6e72d350b078494074a72122bb9e9ca71cc341333ee361d726c1f5dd848a3",
+      "size": 2626751
+    },
+    {
+      "target": "windows-x64",
+      "url": "https://github.com/bobocha214/dbx-plugin-opcua/releases/download/v0.1.0/io.github.yuzhi.opcua-0.1.0-windows-x64.dbxp",
+      "sha256": "abefa7f5adf9c24b5727378bc1765f2c99daa8c66091f2db0bf3e6e717c6ab0c",
+      "size": 2639273
+    }
+  ]
+}
