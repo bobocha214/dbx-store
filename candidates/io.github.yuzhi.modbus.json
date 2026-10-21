@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "io.github.yuzhi.modbus",
+  "publisher": "yuzhi",
+  "version": "0.1.0",
+  "name": "Modbus TCP",
+  "description": "Read and write Modbus TCP registers on PLCs, gateways and remote IO couplers, with polling and guarded writes.",
+  "icon": "https://raw.githubusercontent.com/bobocha214/dbx-plugin-modbus/v0.1.0/assets/plugin.svg",
+  "tags": [
+    "modbus",
+    "modbus-tcp",
+    "plc",
+    "industrial",
+    "iot",
+    "scada"
+  ],
+  "permissions": [
+    "host.storage"
+  ],
+  "source": "https://github.com/bobocha214/dbx-plugin-modbus",
+  "homepage": "https://github.com/bobocha214/dbx-plugin-modbus",
+  "license": "MIT",
+  "releaseNotes": "Initial release: Modbus TCP connection provider, register grid workbench with periodic polling, byte order and data type decoding, and guarded writes.",
+  "localizations": {
+    "zh-CN": {
+      "name": "Modbus TCP",
+      "description": "读写 PLC、网关和远程 IO 上的 Modbus TCP 寄存器，支持周期轮询与带二次确认的写入。"
+    }
+  },
+  "targets": [
+    {
+      "target": "darwin-arm64",
+      "url": "https://github.com/bobocha214/dbx-plugin-modbus/releases/download/v0.1.0/io.github.yuzhi.modbus-0.1.0-darwin-arm64.dbxp",
+      "sha256": "7a72def209d8ea192a2ff40ba80f5c2b3888a5aaaf032d1bf0acf8161919a62d",
+      "size": 315674
+    },
+    {
+      "target": "darwin-x64",
+      "url": "https://github.com/bobocha214/dbx-plugin-modbus/releases/download/v0.1.0/io.github.yuzhi.modbus-0.1.0-darwin-x64.dbxp",
+      "sha256": "ee7d16e79dc79b32bfdd4847867d7436abd237c36891491c18e19d65343803e0",
+      "size": 336979
+    },
+    {
+      "target": "linux-arm64",
+      "url": "https://github.com/bobocha214/dbx-plugin-modbus/releases/download/v0.1.0/io.github.yuzhi.modbus-0.1.0-linux-arm64.dbxp",
+      "sha256": "c761682d6aeb6bd9574a512ff8ed42bd28475e73081ff8ee1516f48d1498d45d",
+      "size": 338651
+    },
+    {
+      "target": "linux-x64",
+      "url": "https://github.com/bobocha214/dbx-plugin-modbus/releases/download/v0.1.0/io.github.yuzhi.modbus-0.1.0-linux-x64.dbxp",
+      "sha256": "a8e2831dc4a68dcd960c7c5bc04627fb6d1a537439966036a6e24697d7f81368",
+      "size": 359560
+    },
+    {
+      "target": "windows-x64",
+      "url": "https://github.com/bobocha214/dbx-plugin-modbus/releases/download/v0.1.0/io.github.yuzhi.modbus-0.1.0-windows-x64.dbxp",
+      "sha256": "bb9c1ff183309ad9e8c547a364708a8461f8a21f24f9e893b4468f9adecc78e5",
+      "size": 260433
+    }
+  ]
+}
