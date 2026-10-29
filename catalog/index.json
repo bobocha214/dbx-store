@@ -2895,10 +2895,17 @@
     {
       "id": "com.vyrnax.translation",
       "name": "Translation 即时翻译",
+<<<<<<< HEAD
+      "description": "Translation 即时翻译 —— 多引擎翻译插件，内置 8 类引擎：OpenAI 兼容大模型（DeepSeek、通义、智谱、Kimi、Ollama、vLLM 等）、本地 CLI 代理（claude / codex / 自定义）、DeepL、Google、百度、有道、阿里云、腾讯云；含流式输出、输入即译、引擎管理与翻译历史。所有网络请求由内置 Go 侧车发出（浏览器沙箱的 CSP 禁止前端直连外部端点，且 host.network 白名单最多 8 个固定 origin，无法满足用户自填端点）；侧车会直连用户在引擎配置中填写的任意 HTTP/HTTPS 端点，翻译原文将发往用户所选引擎的第三方服务。本地 CLI 引擎以参数数组方式（不经 shell）执行用户配置的本机命令，凭据由该 CLI 自持，插件不接触。API Key 经系统密钥库（Windows DPAPI / macOS Keychain / Linux secret-tool）加密后落盘到插件数据目录，不可用时降级为机器绑定 AES-256-GCM 并在界面明确警示。引擎配置、翻译历史与界面偏好统一存放在 <插件数据目录>/translation.db（SQLite），由侧车写入；其中翻译历史（原文与译文）为明文保存，卸载插件后仍会保留，可在「历史」页随时清空；前端运行在 opaque origin 沙箱中，不接触磁盘，也不使用 localStorage。",
+      "publisher": "vyrnax",
+      "verified": false,
+      "icon": "https://dl.dbxio.com/plugins/com.vyrnax.translation/0.2.3/icon.svg",
+=======
       "description": "Translation 即时翻译 —— 多引擎翻译插件，内置 9 类引擎：开箱即用的免费翻译服务（B站公开部署的 Index-Translate 模型，无需注册、无需 API Key）、OpenAI 兼容大模型（DeepSeek、通义、智谱、Kimi、Ollama、vLLM 等）、本地 CLI 代理（claude / codex / 自定义）、DeepL、Google、百度、有道、阿里云、腾讯云；含流式输出、输入即译、引擎管理与翻译历史。所有网络请求由内置 Go 侧车发出（浏览器沙箱的 CSP 禁止前端直连外部端点，且 host.network 白名单最多 8 个固定 origin，无法满足用户自填端点）；侧车会直连用户在引擎配置中填写的任意 HTTP/HTTPS 端点，翻译原文将发往用户所选引擎的第三方服务。本地 CLI 引擎以参数数组方式（不经 shell）执行用户配置的本机命令，凭据由该 CLI 自持，插件不接触。使用内置免费翻译服务时，原文同样会发往该公益端点（index-translate.bilibili.com）；它是公共享用服务、不保证长期可用，也没有服务等级承诺，对稳定性或数据流向有要求的用户请改用自己配置的引擎。API Key 经系统密钥库（Windows DPAPI / macOS Keychain / Linux secret-tool）加密后落盘到插件数据目录，不可用时降级为机器绑定 AES-256-GCM 并在界面明确警示。引擎配置、翻译历史与界面偏好统一存放在 <插件数据目录>/translation.db（SQLite），由侧车写入；其中翻译历史（原文与译文）为明文保存，卸载插件后仍会保留，可在「历史」页随时清空；前端运行在 opaque origin 沙箱中，不接触磁盘，也不使用 localStorage。",
       "publisher": "vyrnax",
       "verified": false,
       "icon": "https://dl.dbxio.com/plugins/com.vyrnax.translation/0.2.4/icon.svg",
+>>>>>>> origin/main
       "tags": [
         "translation",
         "translate",
@@ -2914,6 +2921,11 @@
       "source": "https://github.com/vyrnax/dbx-plugin-translation",
       "homepage": "https://github.com/vyrnax/dbx-plugin-translation",
       "license": "Apache-2.0",
+<<<<<<< HEAD
+      "latestVersion": "0.2.3",
+      "versions": [
+        {
+=======
       "latestVersion": "0.2.4",
       "versions": [
         {
@@ -2959,6 +2971,7 @@
           ]
         },
         {
+>>>>>>> origin/main
           "version": "0.2.3",
           "releasedAt": "2026-10-28T15:12:52.127Z",
           "releaseNotes": "0.2.3：引擎图标接入界面 —— 翻译页的引擎选择、新增引擎的类型选择与引擎列表都会显示各引擎 logo；插件图标换新设计并自动适配深浅主题。底部状态栏固定在窗口最底部，不再随页面内容上下移动。引擎列表支持拖拽排序（默认引擎始终排在第一位），翻译页会记住你上次选择的引擎。同时精简了引擎列表里信息量低的密钥指纹显示。",
@@ -3046,7 +3059,11 @@
       "localizations": {
         "en": {
           "name": "Translation",
+<<<<<<< HEAD
+          "description": "Translation — multi-engine translation plugin with 8 engine types: OpenAI-compatible LLMs (DeepSeek, Qwen, Zhipu, Kimi, Ollama, vLLM, …), local CLI proxies (claude / codex / custom), DeepL, Google, Baidu, Youdao, Alibaba Cloud and Tencent Cloud; with streaming output, translate-as-you-type, engine management and translation history. All HTTP requests are issued by the bundled Go sidecar (the browser sandbox CSP forbids direct calls, and the host.network allowlist cannot express user-supplied endpoints); the sidecar connects directly to whatever HTTP/HTTPS endpoint the user configures per engine, and the source text is sent to the third-party service of the chosen engine. The local CLI engine executes user-configured local commands via an argument array (never through a shell); credentials stay with that CLI and are never touched by the plugin. API keys are encrypted with the OS keychain (Windows DPAPI / macOS Keychain / Linux secret-tool) before being written to the plugin data directory, falling back to machine-bound AES-256-GCM with an explicit in-UI warning. Engine config, history and preferences live in <plugin-data>/translation.db (SQLite), written by the sidecar; translation history (source and target text) is stored in plaintext and survives uninstallation, and can be cleared at any time from the History tab; the frontend runs in an opaque-origin sandbox and never touches disk or localStorage."
+=======
           "description": "Translation — multi-engine translation plugin with 9 engine types: an out-of-the-box free translation engine (Bilibili's publicly deployed Index-Translate model, no signup and no API key), OpenAI-compatible LLMs (DeepSeek, Qwen, Zhipu, Kimi, Ollama, vLLM, …), local CLI proxies (claude / codex / custom), DeepL, Google, Baidu, Youdao, Alibaba Cloud and Tencent Cloud; with streaming output, translate-as-you-type, engine management and translation history. All HTTP requests are issued by the bundled Go sidecar (the browser sandbox CSP forbids direct calls, and the host.network allowlist cannot express user-supplied endpoints); the sidecar connects directly to whatever HTTP/HTTPS endpoint the user configures per engine, and the source text is sent to the third-party service of the chosen engine. The local CLI engine executes user-configured local commands via an argument array (never through a shell); credentials stay with that CLI and are never touched by the plugin. When the built-in free engine is selected, your source text is likewise sent to that community endpoint (index-translate.bilibili.com); it is a shared service with no availability guarantee and no SLA, so choose one of your own engines if stability or data routing matters to you. API keys are encrypted with the OS keychain (Windows DPAPI / macOS Keychain / Linux secret-tool) before being written to the plugin data directory, falling back to machine-bound AES-256-GCM with an explicit in-UI warning. Engine config, history and preferences live in <plugin-data>/translation.db (SQLite), written by the sidecar; translation history (source and target text) is stored in plaintext and survives uninstallation, and can be cleared at any time from the History tab; the frontend runs in an opaque-origin sandbox and never touches disk or localStorage."
+>>>>>>> origin/main
         }
       }
     },
@@ -12926,10 +12943,17 @@
     {
       "id": "io.github.yuzhi.modbus",
       "name": "Modbus TCP",
+<<<<<<< HEAD
+      "description": "Read and write Modbus TCP registers on PLCs, gateways and remote IO at the host and port you enter (502 by default), down to the raw TX/RX frames of every request.",
+      "publisher": "yuzhi",
+      "verified": false,
+      "icon": "https://dl.dbxio.com/plugins/io.github.yuzhi.modbus/0.2.2/icon.svg",
+=======
       "description": "Read and write Modbus TCP registers on PLCs, gateways and remote IO couplers, connecting to the host and port you enter (502 by default). Devices and address ranges are configured inside the workbench, with polling and inline writes that only send on Enter.",
       "publisher": "yuzhi",
       "verified": false,
       "icon": "https://dl.dbxio.com/plugins/io.github.yuzhi.modbus/0.2.1/icon.svg",
+>>>>>>> origin/main
       "tags": [
         "modbus",
         "modbus-tcp",
@@ -12941,12 +12965,60 @@
       "permissions": [
         "host.storage"
       ],
-      "source": "https://github.com/bobocha214/dbx-plugin-modbus",
+      "source": "https://github.com/bobocha214/dbx-plugin-modbus/tree/v0.2.2",
       "homepage": "https://github.com/bobocha214/dbx-plugin-modbus",
       "license": "MIT",
+<<<<<<< HEAD
+      "latestVersion": "0.2.2",
+      "versions": [
+        {
+          "version": "0.2.2",
+          "releasedAt": "2026-10-29T17:47:11.880Z",
+          "releaseNotes": "v0.2.2 更新：地址表格改为 Modbus Poll 式布局——行数（Rows）是唯一的布局设置，列数自动 = 值数量 ÷ 行数，数值按列优先排布（第 i 个值在第 i%行数 行、第 ⌊i/行数⌋ 列），取消了翻页改为整表滚动，同一个地址永远待在同一个格子里；每个格子里左侧是该值的地址（00000 样式）、右侧是值，不必按偏移量心算，表头仍是各列基址；表格不再被拉伸到整个面板宽度。新增「通信报文」面板：每次读写的完整发送（TX）与接收（RX）报文都以十六进制原样显示，并标注从站号与功能码，设备返回异常时显示异常码。更换了新图标（矢量 SVG，深浅色主题下均清晰）。\n\nv0.2.2 is a version update of this listing. The register sheet now follows Modbus Poll: Rows is the only layout setting, columns follow as values / rows, values fill down each column and paging is gone, so an address never moves between cells. Every cell shows its address on the left and its value on the right, so no offset has to be counted, and the sheet sizes to its content instead of stretching across the pane. A new communication view shows the complete TX and RX bytes of every read and write, labelled with the slave id and function code, or the exception code when the device rejected the request. The icon has been replaced with a vector SVG that stays crisp at any DPI.",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.yuzhi.modbus/0.2.2/io.github.yuzhi.modbus-0.2.2-darwin-arm64.dbxp",
+              "sha256": "a7427cf7f1c39872db5a9ff78ae9bec15d28a4614dec7120fb55b7df5350d3f4",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 399907
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.yuzhi.modbus/0.2.2/io.github.yuzhi.modbus-0.2.2-darwin-x64.dbxp",
+              "sha256": "d838d38435b0fcec769d954fedb7687f44801835c90272cff805a2ce9253f717",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 421210
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.yuzhi.modbus/0.2.2/io.github.yuzhi.modbus-0.2.2-linux-arm64.dbxp",
+              "sha256": "1e6bb72cc21e1accd49e67ce04a64ffe24bc5a14be7ad207a48516ea41a1cd61",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 422372
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.yuzhi.modbus/0.2.2/io.github.yuzhi.modbus-0.2.2-linux-x64.dbxp",
+              "sha256": "7e36b495d478dfb278bef8fd819d2901c5810d61ff889bd032683cf0bb24353c",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 443407
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.yuzhi.modbus/0.2.2/io.github.yuzhi.modbus-0.2.2-windows-x64.dbxp",
+              "sha256": "88dfbf2d30e955574281b9b6dbbb5682903cb2b59993a3a01b62ae4c16d25611",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 344680
+            }
+          ]
+        },
+        {
+=======
       "latestVersion": "0.2.1",
       "versions": [
         {
+>>>>>>> origin/main
           "version": "0.2.1",
           "releasedAt": "2026-10-27T16:12:43.583Z",
           "releaseNotes": "0.2.1 更新：写入只在按下回车时才下发，Esc 或点开别处即取消；新建连接只需填工作区名称，设备与地址范围都在工作台里配置，不建连接也能直接打开工作台；新建地址范围默认读取 10 个地址，改完定义立刻重新读取，不必再点读取或轮询；数据类型变宽会自动补读缺少的寄存器；改设备地址或超时会自动重连；安装包内置 MIT LICENSE。\n\n0.2.1 is a version update of this listing. Creating a connection asks only for a workspace name: devices are configured and connected inside the workbench, and a workbench opened with no connection still works. A new range reads ten addresses, editing its definition reads again on the spot, and a value is written only by pressing Enter in the cell - Esc or leaving the field cancels. The package now ships the MIT LICENSE.",
@@ -13034,7 +13106,11 @@
       "localizations": {
         "zh-CN": {
           "name": "Modbus TCP",
+<<<<<<< HEAD
+          "description": "读写 PLC、网关与远程 IO 上的 Modbus TCP 寄存器，连接你填写的 host:port（默认 502），可查看每次读写的原始 TX/RX 报文。"
+=======
           "description": "读写 PLC、网关与远程 IO 上的 Modbus TCP 寄存器，主动连接你填写的 host:port（默认 502）；设备与地址范围都在工作台里配置，支持周期轮询与双击内联写入（只有回车才会发送）。"
+>>>>>>> origin/main
         }
       }
     },
