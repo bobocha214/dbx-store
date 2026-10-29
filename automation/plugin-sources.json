@@ -245,6 +245,11 @@
       "repository": "vyrnax/dbx-plugin-translation",
       "metadataPath": ".dbx-store.json",
       "autoUpdate": true
+    },
+    {
+      "repository": "allran/dbx-plugin-screenshot",
+      "metadataPath": ".dbx-store.json",
+      "autoUpdate": true
     }
   ]
 }
