@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "io.github.yuzhi.localsend",
+  "publisher": "yuzhi",
+  "version": "0.1.4",
+  "name": "邻间 (Neighbor)",
+  "description": "Login-free LAN chat and file sharing for DBX: a guest lobby, direct and group conversations, images and chunked file transfers, and Ed25519-signed transfers between trusted nodes. Hosts a local HTTP node on port 53318 by default and can join another private-IP node.",
+  "icon": "https://raw.githubusercontent.com/bobocha214/dbx-plugin-localsend/v0.1.4/assets/plugin.svg",
+  "tags": [
+    "lan",
+    "im",
+    "chat",
+    "file-transfer",
+    "localsend",
+    "p2p"
+  ],
+  "permissions": [],
+  "source": "https://github.com/bobocha214/dbx-plugin-localsend/tree/v0.1.4",
+  "homepage": "https://github.com/bobocha214/dbx-plugin-localsend",
+  "license": "Apache-2.0",
+  "releaseNotes": "First store listing of 邻间 (Neighbor), a login-free LAN IM for DBX: guest lobby, direct and group chat, images and chunked file transfers, and trusted node-to-node transfers. Ships six x64/ARM64 packages for Windows, macOS and Linux; backend and frontend tests run on the three OS runners and packages are cross-compiled with GOOS/GOARCH. 0.1.4 renames the macOS assets to the store's conventional darwin-x64 / darwin-arm64 target ids (package contents unchanged from 0.1.3), keeps the Apache-2.0 LICENSE inside every .dbxp, and aligns the docs and UI version labels. Earlier 0.1.x tags are source-repository history only and were never submitted to the store. 首次上架：免登录局域网通讯；0.1.4 统一 darwin 平台包名。",
+  "localizations": {
+    "zh-CN": {
+      "name": "邻间",
+      "description": "免登录局域网通讯：游客大厅、单聊群聊、图片文件与可信节点直连，支持网页访问。"
+    }
+  },
+  "targets": [
+    {
+      "target": "darwin-arm64",
+      "url": "https://github.com/bobocha214/dbx-plugin-localsend/releases/download/v0.1.4/io.github.yuzhi.localsend-0.1.4-darwin-arm64.dbxp",
+      "sha256": "08b78d39f89e5a11b609b4ce10fdb863909ddab8e72b048dc3e1db12ab9b5b91",
+      "size": 3363692
+    },
+    {
+      "target": "darwin-x64",
+      "url": "https://github.com/bobocha214/dbx-plugin-localsend/releases/download/v0.1.4/io.github.yuzhi.localsend-0.1.4-darwin-x64.dbxp",
+      "sha256": "49a8017e13e3a9fabc50565e90d259df28ea1c94d463b161f069701b1ba367e3",
+      "size": 3665346
+    },
+    {
+      "target": "linux-arm64",
+      "url": "https://github.com/bobocha214/dbx-plugin-localsend/releases/download/v0.1.4/io.github.yuzhi.localsend-0.1.4-linux-arm64.dbxp",
+      "sha256": "f59fb260c082d02b9ae2a5cda3c0982af4f58bf27373173b48ffce3cea09e457",
+      "size": 3259788
+    },
+    {
+      "target": "linux-x64",
+      "url": "https://github.com/bobocha214/dbx-plugin-localsend/releases/download/v0.1.4/io.github.yuzhi.localsend-0.1.4-linux-x64.dbxp",
+      "sha256": "223f511a72abf6078edb2a91cb43c50177c2109c614dd0ab797dab85afa9811f",
+      "size": 3624140
+    },
+    {
+      "target": "windows-arm64",
+      "url": "https://github.com/bobocha214/dbx-plugin-localsend/releases/download/v0.1.4/io.github.yuzhi.localsend-0.1.4-windows-arm64.dbxp",
+      "sha256": "9589273842e3bfcfe80e89ac257565ffad9dc6f0bee11ecd5d5cfd876cbb414e",
+      "size": 3393700
+    },
+    {
+      "target": "windows-x64",
+      "url": "https://github.com/bobocha214/dbx-plugin-localsend/releases/download/v0.1.4/io.github.yuzhi.localsend-0.1.4-windows-x64.dbxp",
+      "sha256": "eb0d11ef009d615089c8fd458b547c45567a52aca82245a1da2c3ad74a97ed5d",
+      "size": 3784270
+    }
+  ]
+}
