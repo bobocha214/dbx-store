@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "io.github.yuzhi.localsend",
+  "publisher": "yuzhi",
+  "version": "0.1.2",
+  "name": "邻间 (Neighbor)",
+  "description": "Login-free LAN chat and file sharing for DBX: a guest lobby, direct and group conversations, images and chunked file transfers, and Ed25519-signed transfers between trusted nodes. Hosts a local HTTP node on port 53318 by default and can join another private-IP node.",
+  "icon": "https://raw.githubusercontent.com/bobocha214/dbx-plugin-localsend/v0.1.2/assets/plugin.svg",
+  "tags": [
+    "lan",
+    "im",
+    "chat",
+    "file-transfer",
+    "localsend",
+    "p2p"
+  ],
+  "permissions": [],
+  "source": "https://github.com/bobocha214/dbx-plugin-localsend/tree/v0.1.2",
+  "homepage": "https://github.com/bobocha214/dbx-plugin-localsend",
+  "license": "MIT",
+  "releaseNotes": "First store listing of 邻间 (Neighbor), a login-free LAN IM for DBX. 0.1.2 ships six x64/ARM64 packages for Windows, macOS and Linux, with backend and frontend tests run on each OS runner and packages cross-compiled via GOOS/GOARCH; macOS and Linux get native directory pickers, and every target carries its own SHA-256 and artifact metadata. 首次上架：免登录局域网通讯，游客大厅、单聊群聊、图片与分块文件传输、可信节点直连，支持六平台安装包。",
+  "localizations": {
+    "zh-CN": {
+      "name": "邻间",
+      "description": "免登录局域网通讯：游客大厅、单聊群聊、图片文件与可信节点直连，支持网页访问。"
+    }
+  },
+  "targets": [
+    {
+      "target": "darwin-arm64",
+      "url": "https://github.com/bobocha214/dbx-plugin-localsend/releases/download/v0.1.2/io.github.yuzhi.localsend-0.1.2-macos-arm64.dbxp",
+      "sha256": "25f8c54030891f9b4aa0e9891878be3566490af72f2bfbcc5c20f424df35f098",
+      "size": 3359573
+    },
+    {
+      "target": "darwin-x64",
+      "url": "https://github.com/bobocha214/dbx-plugin-localsend/releases/download/v0.1.2/io.github.yuzhi.localsend-0.1.2-macos-x64.dbxp",
+      "sha256": "f97073179fe05f4544ac8eb7b2a4950611ae1275cc9edc74b3558507c98da1e5",
+      "size": 3661238
+    },
+    {
+      "target": "linux-arm64",
+      "url": "https://github.com/bobocha214/dbx-plugin-localsend/releases/download/v0.1.2/io.github.yuzhi.localsend-0.1.2-linux-arm64.dbxp",
+      "sha256": "dc1c037e6dbed9ce50a4ba7611a7c5b85f209ae9da80bf21b6424cfc2b76ce65",
+      "size": 3255671
+    },
+    {
+      "target": "linux-x64",
+      "url": "https://github.com/bobocha214/dbx-plugin-localsend/releases/download/v0.1.2/io.github.yuzhi.localsend-0.1.2-linux-x64.dbxp",
+      "sha256": "0ddb9035b148adcb40a22ff97a072019cf03ae1f37716a5f367207e69c523f03",
+      "size": 3620024
+    },
+    {
+      "target": "windows-arm64",
+      "url": "https://github.com/bobocha214/dbx-plugin-localsend/releases/download/v0.1.2/io.github.yuzhi.localsend-0.1.2-windows-arm64.dbxp",
+      "sha256": "757c9b23b325391ff72d7591b027838f7d43789c98b2d147dea1654e11bba1bb",
+      "size": 3389588
+    },
+    {
+      "target": "windows-x64",
+      "url": "https://github.com/bobocha214/dbx-plugin-localsend/releases/download/v0.1.2/io.github.yuzhi.localsend-0.1.2-windows-x64.dbxp",
+      "sha256": "9175ba867f2599199f01dfec55099f1448fe14514a38a1ce609160a71880b6a0",
+      "size": 3780151
+    }
+  ]
+}
